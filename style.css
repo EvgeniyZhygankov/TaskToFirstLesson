@@ -19,3 +19,20 @@
 .colorRED{
     color: red;
 }
+
+.listDisc{
+    list-style-type: disc;
+}
+
+.listParagraph{
+    list-style-type: none;
+}
+
+.listParagraph li:before {
+    
+    content: "\00a7  ";
+}
+
+.listCircle{
+    list-style-type: circle;
+}
