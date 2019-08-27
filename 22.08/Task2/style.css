@@ -1,0 +1,46 @@
+body, html, .main {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 5px black solid;
+    background-color: white;
+    width: 800px;
+    height: 800px;
+    position: relative;
+}
+
+.red, .green, .blue {
+    width: 400px;
+    height: 400px;
+}
+
+.red {
+    background-color: red;
+    z-index: 1;
+}
+
+.green {
+    background-color: green;
+    position: absolute;
+    z-index: 2;
+    top: 200px;
+    left: 200px;
+}
+
+.blue {
+    background-color: blue;
+    position: absolute;
+    z-index: 1;
+    top: 400px;
+    left: 400px;
+}
