@@ -1,15 +1,28 @@
-body, html, .Main {
+body, html, .main {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-.Main > div {
-    margin: 0.5%;
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.main > div:not(.orange) {
+    margin-top: 0.7%;
 }
 
 .container > div {
-    margin: 0 5px;
+    /* почему-то если я указываю margin по горизонтали
+    меньше чем пять, то в синем секторе правый элемент имеет зазор справа.
+
+    P.S. в само низу стилей указываю убирание спраой стороны кадого правого элемента */
+    margin: 0 5px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
 
 
@@ -29,7 +42,6 @@ body, html, .Main {
 
 
 .yellow {
-    display: flex;
     height: 50%;
 }
 
@@ -37,6 +49,10 @@ body, html, .Main {
     background-color: yellow;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
 }
 
 
@@ -58,6 +74,8 @@ body, html, .Main {
 .gray {
     display: flex;
     height: 15%;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .gray div {
