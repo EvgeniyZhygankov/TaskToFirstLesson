@@ -1,0 +1,56 @@
+body, html, table {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+td {
+    font-size: 50px;
+    text-align: center;
+    width: 25%;
+}
+
+table:not(.orange) {
+    margin-top: 0.4%;
+}
+
+
+
+.orange {
+    height: 10%;
+}
+
+.orange td {
+    background-color: orange;
+}
+
+
+
+.yellow {
+    height: 47.8%;
+}
+
+.yellow td {
+    background-color: yellow;
+}
+
+
+
+.blue {
+    height: 15%;
+}
+
+.blue td {
+    background-color: blue;
+}
+
+
+
+.gray {
+    height: 25%;
+}
+
+.gray td {
+    background-color: gray;
+}
