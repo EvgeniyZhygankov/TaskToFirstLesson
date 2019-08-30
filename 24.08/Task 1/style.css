@@ -1,0 +1,89 @@
+@import "style2.css";
+
+body, html, .main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    height: 85%;
+}
+
+section {
+    height: 40%;
+    width: 96%;
+    background: lightgray;
+    border-radius: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    margin: 1% 0 0 0;
+    align-self: center;
+}
+
+section > p {
+    margin: 2% 0 0 5%;
+    font-size: 27px;
+    height: 50%;
+    width: 100%;
+}
+
+.underLineText {
+    font-size: 50px;
+    text-decoration: underline;
+
+}
+
+section > a {
+    display: block;
+    background: rgba(46, 97, 175, 0.815);
+    border-radius: 25px/15px;
+    width: 150px;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    color: white;
+    text-decoration: none;
+    padding: 20px 0px; 
+    text-align: center;
+    align-self: flex-end;
+}
+
+
+@media (max-width: 600px) {
+        section {
+            height: 75%;
+            width: 100%;
+        }
+
+        section > a {
+            margin-bottom: 40%;
+        }
+}
+
+@media (max-height: 700px) and (min-width: 900px){
+    section {
+        flex-wrap: nowrap;
+    }
+
+    section > p {
+        width: 30%;
+    }
+
+    section > a {
+        align-self: center;
+        margin-bottom: 0;
+    }
+}
