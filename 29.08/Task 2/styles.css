@@ -1,0 +1,156 @@
+body, html, .main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: lightgray;
+    align-content: flex-start;
+}
+
+.logo, .search {
+    height: 8%;
+    width: 40%;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-color: rgb(2, 158, 145);
+}
+
+.search {
+    background-color: rgb(2, 158, 145);
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5%;
+    background-color: rgb(246, 255, 113);
+}
+
+.navbar > p {
+    background-color: rgb(2, 158, 145);
+    padding: 4px;
+}
+
+.blocks {
+    width: 20%;
+    height: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.blocks > div {
+    width: 98%;
+    background-color: rgb(2, 158, 145);
+    margin-top: 20px;
+    
+}
+
+.images {
+    width: 80%;
+    height: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.images > div {
+    height: 40%;
+    width: 33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.images > div > img{
+    height: 90%;
+    width: 50%;
+    border-radius: 50%;
+    border: 4px solid black;
+    align-self: center;
+}
+
+.images > div > p {
+    margin: 0 0 0 20%;
+}
+
+footer {
+    align-self: flex-end;
+
+    width: 100%;
+    height: 3%;
+    background-color: rgb(2, 158, 145);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    display: none;
+}
+
+@media (max-height: 650px) {
+    .navbar > p {
+        padding: 0;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .blocks, .images {
+        height: 79%;
+    }
+    
+    .images > div {
+        width: 50%;
+        height: 27%;
+    }
+
+    .images > div > img {
+        width: 30%;
+    }
+
+    footer {
+        height: 8%;
+    }
+
+    footer > p {
+        display: inline;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    body, html, .main {
+        height: auto;
+    }
+
+    .images > div {
+        width: 100%;
+        margin-top: 10%;
+        height: auto;
+    }
+    
+    footer {
+        display: none;
+    }
+}
