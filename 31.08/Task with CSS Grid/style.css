@@ -1,0 +1,105 @@
+body, html, .main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr 3% 3fr 2% 1fr;
+    column-gap: 1%;
+}
+
+.red {
+    background: red;
+}
+
+.orange {
+    background-color: orange;
+    grid-column: 2 / span 2;
+}
+
+.green {
+    background-color: green;
+    grid-column: 1 / span 3;
+    grid-row: 3;
+}
+
+.brown {
+    background-color: brown;
+    grid-row: 5;
+}
+
+.blue {
+    background-color: blue;
+    grid-row: 5;
+}
+
+.violet {
+    background-color: violet;
+    grid-row: 5;
+}
+
+
+
+@media (orientation: portrait) and (max-height: 1334px) and (max-width: 750px) 
+{
+    .orange, .blue, .brown {
+        display: none;
+    }
+
+    .main {
+        grid-template-rows: 15% 2% 15% 1% 1fr;
+    }
+
+    .green {
+        grid-row: 1;
+    }
+
+    .violet {
+        grid-row: 3;
+        grid-column: 1/ span 3;
+    }
+
+    .red {
+        grid-row: 5;
+        grid-column: 1 / span 3;
+    }
+}
+
+@media (orientation: landscape) and (max-height: 768px) and (max-width: 1024px) 
+{
+    .main {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .brown {
+        display: none;
+    }
+
+    .orange {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .red {
+        grid-row: 3;
+        grid-column: 1 / span 4;
+    }
+
+    .violet {
+        grid-column: 2 / span 3;
+        grid-row: 1;
+    }
+
+    .green {
+        grid-row: 5;
+        grid-column: 1 / span 2;
+    }
+
+    .blue {
+        grid-row: 5;
+        grid-column: 3 / span 4;
+    }
+}
