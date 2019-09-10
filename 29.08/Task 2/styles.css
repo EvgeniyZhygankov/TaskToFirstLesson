@@ -147,10 +147,14 @@ footer > p {
     .images > div {
         width: 100%;
         margin-top: 10%;
-        height: auto;
+        /* height: auto; */
     }
     
-    footer {
+    /* footer {
         display: none;
-    }
+    } */
+}
+
+@media (max-width: 400px) {
+    
 }

@@ -1,0 +1,128 @@
+=backGreen
+    background-color: rgb(2, 158, 145)
+
+=TextCenter
+    display: flex
+    justify-content: center
+    align-items: center
+
+$bolText: bold
+
+body, html, .main
+    margin: 0
+    padding: 0
+    height: 100%
+    background-color: lightgray
+
+.main
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-content: flex-start
+
+header
+    height: 15%
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    .logo, .search
+        +backGreen
+        font-size: 2vw
+        +TextCenter
+        width: 40%
+        height: 60%
+        align-self: flex-end
+        font-weight: $bolText
+    .navbar
+        background-color: lightyellow
+        width: 100%
+        display: flex
+        justify-content: space-around
+        align-items: center
+        height: 40%
+        p
+            +backGreen
+            padding: 4px
+
+section
+    height: 83%
+    width: 100%
+    display: flex
+    align-items: flex-end
+    .blocks
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        height: 95%
+        width: 20%
+        div
+            +backGreen
+            width: 98%
+            margin-top: 20px
+            font-weight: $bolText
+    .images
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: flex-start
+        width: 80%
+        height: 95%
+        div
+            width: 33%
+            height: 47%
+            display: flex
+            flex-direction: column
+            align-items: center
+            img
+                width: 50%
+                height: 90%
+                border: 4px solid black
+                border-radius: 50%
+                align-self: center
+            p
+                align-self: flex-start
+                margin-left: 25%
+                margin-top: 0
+
+footer
+    +backGreen
+    +TextCenter
+    width: 100%
+    height: 2%
+    p
+        display: none
+
+@media screen and ( max-width: 900px )  
+    header
+        .logo, .search
+            font-size: 3vw
+
+    section
+        height: 80%
+        .images
+            div
+                width: 50%
+                height: 30%
+        .blocks
+    
+    footer
+        height: 5%
+        p
+            display: inline    
+
+@media screen and ( max-width: 600px )
+
+    header
+        .logo, .search
+            font-size: 4vw
+
+    section
+        height: auto
+        .images
+            height: 99%
+            div
+                width: 100%
+                height: 15%
+        .blocks
+            height: 99%
